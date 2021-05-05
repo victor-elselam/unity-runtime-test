@@ -1,0 +1,11 @@
+{
+    "name": "unity-runtime-test",
+    "displayName": "Unity Runtime Test",
+    "version": "0.0.1",
+    "unity": "2018.3",
+    "description": "",
+    "keywords": [
+        "unity"
+    ],
+    "category": "Unity"
+}
