@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using _Tests;
-using UnityEngine.Events;
 
 namespace Scripts
 {
     public class AssertObject<T> : IAssert
     {
-        public readonly UnityEvent<string> OnRun = new UnityEvent<string>();
+        public event Action<string> OnRun;
     
         private readonly List<Func<T>> _methods = new List<Func<T>>();
         private T _expectedResult;

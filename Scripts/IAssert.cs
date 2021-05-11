@@ -1,4 +1,4 @@
-﻿namespace _Tests
+﻿namespace Scripts
 {
     public interface IAssert
     {

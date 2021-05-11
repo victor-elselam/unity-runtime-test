@@ -17,7 +17,7 @@ namespace Scripts
 
         public void Awake()
         {
-            Assert.OnRun.AddListener(GetResult);
+            Assert.OnRun += GetResult;
         }
 
         private void GetResult(string message)
@@ -26,6 +26,8 @@ namespace Scripts
             _icon.color = Assert.EndResult ? _correctColor : _incorrectColor;
             _text.color = Assert.EndResult ? _correctColor : _incorrectColor;
             _text.text = message;
+            
+            Assert.OnRun -= GetResult;
         }
     }
 }
