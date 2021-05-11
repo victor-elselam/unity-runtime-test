@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/unity-runtime-test/Examples/SimpleTest.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
