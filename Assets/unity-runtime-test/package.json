@@ -3,9 +3,10 @@
     "displayName": "Unity Runtime Test",
     "version": "0.0.1",
     "unity": "2018.3",
-    "description": "",
+    "description": "Framework for Unit Tests in scenes",
     "keywords": [
-        "unity"
+        "unity",
+	"unit-test"
     ],
     "category": "Unity"
 }
