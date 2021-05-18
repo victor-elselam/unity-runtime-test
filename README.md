@@ -14,13 +14,13 @@ I plan to keep improving and investing effort in this framework, some of my next
 - Improve documentation
 
 It's very simple to use. 
-1 - Drag TestPrefab to a new scene
-2 - Assign the inspector fields
-3 - Create a new c# script that inherit from AssertMonoBehaviour
-4 - Do the Asserts in Awake method, just like the examples
+- Drag TestPrefab to a new scene
+- Assign the inspector fields
+- Create a new c# script that inherit from AssertMonoBehaviour
+- Do the Asserts in Awake method, just like the examples
 
 I encourage you to extend the AssertMonoBehaviour with your own needs, for that, Setup() method is virtual.
 So you can override it's initialization and create the default setups for your project, like a Context, for example.
 
 Issues:
-The sintaxe allows you to use "ShouldBe().ShouldNotBe()" in the same Assert, but this is not supported and I'll make a fix for that as soon as possible
+The syntax allows you to use "ShouldBe().ShouldNotBe()" in the same Assert, but this is not supported and I'll make a fix for that as soon as possible
