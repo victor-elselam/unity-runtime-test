@@ -3,6 +3,7 @@ This is a Unit Test Framework built with Unity Scenes, so we have all features o
 It's based on NUnit implementation, however, it's still much more limitated. 
 I plan to keep improving and investing effort in this framework, some of my next steps are:
 
+# Nexts Steps
 - Create a system that can play tests in sequence and provide a file/window with the result report
 - Create a shortcut allowing us to run tests on builds with this automated system
 - A configurable object to allow send those reports over a custom server
@@ -13,7 +14,7 @@ I plan to keep improving and investing effort in this framework, some of my next
 - New examples for all new features
 - Improve documentation
 
-It's very simple to use. 
+# Get Started
 - Drag TestPrefab to a new scene
 - Assign the inspector fields
 - Create a new c# script that inherit from AssertMonoBehaviour
@@ -22,5 +23,5 @@ It's very simple to use.
 I encourage you to extend the AssertMonoBehaviour with your own needs, for that, Setup() method is virtual.
 So you can override it's initialization and create the default setups for your project, like a Context, for example.
 
-Issues:
+# Issues
 The syntax allows you to use "ShouldBe().ShouldNotBe()" in the same Assert, but this is not supported and I'll make a fix for that as soon as possible
