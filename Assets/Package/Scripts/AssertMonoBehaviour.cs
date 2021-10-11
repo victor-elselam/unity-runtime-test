@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scripts
+namespace com.elselam.runtimetest
 {
     public class AssertMonoBehaviour : MonoBehaviour
     {
@@ -42,10 +42,11 @@ namespace Scripts
 
         protected void Finish()
         {
-            if (_asserts.All(a => a.Assert.EndResult))
+            if (_asserts.All(a => a.Assert.EndResult)) {
                 _successIndicator.gameObject.SetActive(true);
-            else
+            } else {
                 _failIndicator.gameObject.SetActive(true);
+            }
         }
     }
 }
