@@ -37,7 +37,7 @@ or
 
 You can download sample for use UI Canvas prefabs
 
-![Sample for download](Res/example.gif)
+![Sample for download](Res/example.png)
 
 
 ## Special Requirements
