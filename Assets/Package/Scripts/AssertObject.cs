@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Scripts
+namespace com.elselam.runtimetest
 {
-    public class AssertObject<T> : IAssert
+    public class AssertObject<T> : IAssert, IShouldBeObject<T>, IShouldNotBeObject<T>
     {
         public event Action<string> OnRun;
     
@@ -32,7 +32,7 @@ namespace Scripts
         /// </summary>
         /// <param name="expectedResult"></param>
         /// <returns></returns>
-        public AssertObject<T> ShouldBe(T expectedResult)
+        public IShouldBeObject<T> ShouldBe(T expectedResult)
         {
             _resultShouldBeEqual = true;
             _expectedResult = expectedResult;
@@ -45,7 +45,7 @@ namespace Scripts
         /// </summary>
         /// <param name="expectedResult"></param>
         /// <returns></returns>
-        public AssertObject<T> ShouldNotBe(T expectedResult)
+        public IShouldNotBeObject<T> ShouldNotBe(T expectedResult)
         {
             _resultShouldBeEqual = false;
             _expectedResult = expectedResult;
@@ -58,7 +58,7 @@ namespace Scripts
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
-        public AssertObject<T> Because(string message)
+        public IAssertObject<T> Because(string message)
         {
             _message = $"{_prefixMessage} - {message}";
             return this;
@@ -68,7 +68,7 @@ namespace Scripts
         /// Run all Asserts and compares to the expected result
         /// </summary>
         /// <returns></returns>
-        public AssertObject<T> Run()
+        public IAssertObject<T> Run()
         {
             var results = new List<T>();
             _methods.ForEach(m => results.Add(m.Invoke()));

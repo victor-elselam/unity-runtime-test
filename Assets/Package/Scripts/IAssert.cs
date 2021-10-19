@@ -1,4 +1,4 @@
-﻿namespace Scripts
+﻿namespace com.elselam.runtimetest
 {
     public interface IAssert
     {

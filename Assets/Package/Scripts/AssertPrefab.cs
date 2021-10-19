@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scripts
+namespace com.elselam.runtimetest
 {
     public class AssertPrefab : MonoBehaviour
     {
